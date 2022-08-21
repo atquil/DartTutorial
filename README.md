@@ -1,5 +1,6 @@
 # DartTutorial
 This will cover from basic to advance topics, which will help you in working with Flutter. 
+**Prerequisite** : Basic understanding of any OOP Language. 
 
 
 ## What is Dart ? 
