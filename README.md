@@ -2,35 +2,49 @@
 This will cover from basic to advance topics, which will help you in working with Flutter. 
 
 
-What is Dart ? 
+## What is Dart ? 
+
 Dart is a general-purpose, high-level modern programming language. It has two type of compilation technique 
-    a. Just in Time Compilation (JOT) : 
-            1. What ? Convert the byte code in machine code (native code)
-            2. Help by compiling only those part which is being run by machine, thus providing feature of hot reload. 
-    b. Ahead of Time Compilation (AOT) :
-            1. What ? It converts the dart code in the optimized JavaScript code using dar2js compiler and run in all modern browser
-            2. Helps by compiling the code, to be deployed in prod environment or to app-store etc. 
-
-If you don't want to install any software then, use Dart Pad. 
-Online Compiler : https://dart.dev/tools/dartpad 
+1. Just in Time Compilation (JOT) : 
+   - What ? Convert the byte code in machine code (native code)
+   - Help by compiling only those part which is being run by machine, thus providing feature of hot reload. 
+2. Ahead of Time Compilation (AOT) :
+   - What ? It converts the dart code in the optimized JavaScript code using dar2js compiler and run in all modern browser
+   - Helps by compiling the code, to be deployed in prod environment or to app-store etc. 
 
 
-Installation Steps: VS-CODE - Dart : https://dart.dev/tools/vs-code 
+## Important Links
 
-Other helpful links : 
+### Online Compiler : https://dart.dev/tools/dartpad 
+### Installation Steps for Dart in VS-Code : https://dart.dev/tools/vs-code 
 
-For All users:
-    1. Install VS-CODE : https://code.visualstudio.com/ 
-    2. Install Android Studio : As it will help in installing android toolchain and different sdks for android : https://developer.android.com/studio 
+### Software:
+   1. Install VS-CODE : https://code.visualstudio.com/ 
+   2. Install Android Studio : As it will help in installing android toolchain and different sdks for android : https://developer.android.com/studio 
 
 For Mac Users Only : 
-    1. Install HomeBrew if you are on Mac : https://brew.sh/ 
-    2. Install X-CODE if on Mac form Play store.
+   1. Install HomeBrew if you are on Mac : https://brew.sh/ 
+   2. Install X-CODE if on Mac form Play store.
 
 
-Execution: 
-How to execute in terminal : 
-  a. dart --version : Check if dart installed / if you are using dartPad then click RUN button.
-  b. cd to your folder location cd <folder location>
-  c. dart <fileName.dart>  --> it will execute the file containing main()
-  e. dart -c <fileName.dart> : Recommended for better debugging. 
+### Some useful commands: 
+1.  Know the dart version after installation 
+```
+    dart --version 
+```
+2. Execute the file containing ```main()```
+```
+    dart <fileName.dart>
+```
+3. Execute for better debugging 
+```   
+    dart -c <fileName.dart> 
+```
+
+## Important Reading resources
+1. Dart official page [Most Detailed] : https://dart.dev/guides/language/language-tour 
+2. JavaTPoint [BEST] : https://www.javatpoint.com/dart-programming
+3. Vogella : https://www.vogella.com/tutorials/Dart/article.html 
+4. Raywenderlich : https://www.raywenderlich.com/22685966-dart-basics 
+5. TutorialsPoint : https://www.tutorialspoint.com/dart_programming/index.htm 
+6. GeeksForGeeks : https://www.geeksforgeeks.org/dart-tutorial/ 
