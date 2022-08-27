@@ -14,19 +14,20 @@ Dart is a general-purpose, high-level modern programming language. It has two ty
    - Helps by compiling the code, to be deployed in prod environment or to app-store etc. 
 
 
-## Important Links
+# Important Links
 
-### Online Compiler : https://dart.dev/tools/dartpad 
-### Installation Steps for Dart in VS-Code : https://dart.dev/tools/vs-code 
+### Online Dart Compiler : https://dart.dev/tools/dartpad 
 
-### Software:
-   1. Install VS-CODE : https://code.visualstudio.com/ 
-   2. Install Android Studio : As it will help in installing android toolchain and different sdks for android : https://developer.android.com/studio 
 
-For Mac Users Only : 
-   1. Install HomeBrew if you are on Mac : https://brew.sh/ 
-   2. Install X-CODE if on Mac form Play store.
+### Installation Steps for Dart
+  1. Install Package Manager 
+      - Window : Chocolatey (https://chocolatey.org/install) 
+      - Mac : Homebrew (https://brew.sh/)
+  2. Install Dart on your system using package manager (https://dart.dev/get-dart)
+      - Check in terminal for Dart version : `dart --version`
 
+   3. Install VS-Code (https://code.visualstudio.com/) 
+      - Use Dart Extension (https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 
 ### Some useful commands: 
 1.  Know the dart version after installation 
