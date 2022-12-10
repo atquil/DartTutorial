@@ -28,7 +28,7 @@ Learning Dart can provide many benefits for a programmer like:
 ### **Prerequisite** : Basic understanding of any OOP Language.
 This **DartTutorial** will cover from basic to advance topics, which will help you in working with Flutter.
 
-Chapters
+# **_Chapters_**
 1. [Introduction](https://github.com/atquil/DartTutorial/tree/1-Introduction)
 2. [Data Type](https://github.com/atquil/DartTutorial/tree/2-DataType)
 3. [Variables](https://github.com/atquil/DartTutorial/tree/3-Variables)
