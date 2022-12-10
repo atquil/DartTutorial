@@ -1,8 +1,6 @@
-void main(List<String> args) {
-  //Operators doc : https://dart.dev/guides/language/language-tour#arithmetic-operators
-  // All operators behave same as Java
-  print("************* 1. Arithmetic Operator ***********");
-  // * Arithmetic Operator :add(+),sub(-), mod(%), div(/),divWithIntQuotient(~/)
+void main() {
+  print(
+      "************* 1. Arithmetic Operator: add(+),sub(-), mod(%), div(/),divWithIntQuotient(~/) ***********");
 
   // difference between / and ~/.
   print(3 / 2); // 1.5
@@ -12,65 +10,69 @@ void main(List<String> args) {
   print(
       "[Arithmetic Operation]: Final value after arithmetic operation :$finalValue");
 
-  print("************* 2. Relational Operator ***********");
-  // * Relational Operator == , !=, >= , < =  , > , < . It returns Boolean
+  print(
+      "************* 2. Relational Operator (return boolean):== , !=, >= , < =  , > , <  ***********");
 
   if (finalValue == 4.0) print("Yes");
   if (finalValue != 5.0) print("No");
   if (finalValue >= 4.0) print("Ye");
   if (finalValue <= 5.0) print("no");
 
-  print("************* 3. Unary Operator ***********");
-  // * Unary Operator: IncrementValue(++x), PostIncrement (x++), PreDec(--x), PostDec(x--)
+  print("************* 3. Unary Operator: IncrementValue(++x), PostIncrement (x++), PreDec(--x), PostDec(x--) ***********");
 
-  print("[Unary Operator]:FinalValue Before Unary Operation: $finalValue");
-  ++finalValue;
-  print("[Unary Operator]:PreIncrement : $finalValue");
-  finalValue++;
-  print("[Unary Operator]:PostIncrement : $finalValue");
-  --finalValue;
-  print("[Unary Operator]:PreDecrement : $finalValue");
-  finalValue--;
-  print("[Unary Operator]:PostDecrement : $finalValue");
+  int unaryValue = 10;
+  print("[Unary Operator]:FinalValue Before Unary Operation: $unaryValue");
+  ++unaryValue;
+  print("[Unary Operator]:PreIncrement : $unaryValue");
+  unaryValue++;
+  print("[Unary Operator]:PostIncrement : $unaryValue");
+  --unaryValue;
+  print("[Unary Operator]:PreDecrement : $unaryValue");
+  unaryValue--;
+  print("[Unary Operator]:PostDecrement : $unaryValue");
 
-  print("************* 4. Assignment Operator ***********");
-  // Assignment Operator: Assign value ot operator using = , but we can also combine it with arithmetic operators like  +,- etc.
-
+  print("************* 4. Assignment Operator : = , += ***********");
+ 
   finalValue *= 2; // Compound assignment
   print("[Assignment Operator]: Multiplying the value to 2 :$finalValue");
 
-  print("************* 4. Type Test Operator ***********");
-  // * For testing the expressions runtime
+  print("************* 5. Conditional Operators: if-else, switch etc ***********");
+  
+  // example with logical operator
 
-  var someValue = 22;
-  var someString = "SomeValue";
-
-  //1. is
-  print("[Type Test] : ${someString is String}");
-
-  //2. is!
-  print("[Type Test] : ${someString is! String}");
-
-  //3. as : Use as operator to cast an object to a particular type if and only if you are sure that the object is of that type
-  print("[Type Test] : ${someValue as int}");
-
-  print("************* 5. Logical Operator ***********");
-  // Logical Operator : && , ||  and !expr
+  print("************* 6. Logical Operator: && , ||  and !expr ***********");
 
   if (finalValue == 12.0 && finalValue > 2) print(finalValue);
   if (finalValue < 2 || finalValue > 2) print(finalValue);
   if (!(finalValue == 22)) print(r"!expr : inverts the expression ");
 
-  print("************* 6. Conditional Operators ***********");
-  // Conditional Operator has IF-Else kind of situation
-
-  print("******************** a. Ternary operator *****************");
-  // Ternary operator - can also solve using IF-ELSE or Switch condition but it's long.
+  
+  print("************* 7.  Ternary operator *****************");
+  
   int x = 100;
   var result = x % 2 == 0 ? "Even" : "Odd";
   print(result);
 
-  print("******************** b. Null Aware Operators *****************");
+
+print("************* 8. Type Test Operator : is , !is, as  ***********");
+
+  /*
+    Type Test Operators : To test expression runtime , can be useful in validation 
+        a. is or !is : To check the expression 
+        b. as : To cast an object to a particular type if and only if you are sure that the object is of that type
+  */
+
+  var someValue = 22;
+  var someString = "SomeValue";
+
+  print("[Type Test] : ${someString is String}");
+
+  print("[Type Test] : ${someString is! String}");
+ 
+  print("[Type Test] : ${someValue as int}");
+
+
+  print("************* 9. Null Aware Operators *****************");
 
   // * Null Aware Operators (??) (?.)
   // ! Problem : Generally, when we are dealing with JSON parsing, we have to do the null check for the object
