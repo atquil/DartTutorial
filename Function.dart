@@ -13,7 +13,7 @@ Function :
 */
 
 void main() {
-  print("******** 1. Sample Function ******");
+  print("******** 1. Simple Function ******");
   int squareInt(int num) =>  num * num;
   var squareWithSampleFunction = squareInt(10);
 
