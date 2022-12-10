@@ -1,16 +1,16 @@
 void main(List<String> args) {
-  /// Control flow in dart can be categories into
-  ///
-  /// 1. Decision Making Statement
-  ///    a. If .. Else Loop
-  ///    b. Switch Case
-  /// 2. Looping Statement : Dart looping statements are used to execute
-  ///                        the block of code multiple-times for the given number of time until it matches the given condition. These statements are also called Iteration statement.
-  ///    a. While and Do While
-  ///    b. For Loop
-  /// 3. Jump Statement : it transfers the execution to another statement from the current statement.
-  ///    a. break and continue
-  ///
+  /*
+   Control flow in dart can be categories into
+   1. Decision Making Statement
+      a. If .. Else Loop
+      b. Switch Case
+   2. Looping Statement : Dart looping statements are used to execute
+                          the block of code multiple-times for the given number of time until it matches the given condition. These statements are also called Iteration statement.
+      a. While and Do While
+      b. For Loop
+   3. Jump Statement : it transfers the execution to another statement from the current statement.
+      a. break and continue
+   */
 
   print("************* 1. If Loop ***********");
 
@@ -22,7 +22,7 @@ void main(List<String> args) {
   else
     print("In else");
 
-  print("************* 2. Switch and Case ***********");
+  print("************* 2. Switch  ***********");
 
   var condition = "SUCCESS";
 
@@ -37,7 +37,7 @@ void main(List<String> args) {
       print("If nothing from case then this will be printed");
   }
 
-  /// Dart also supports empty case clauses, with fall-through.
+  /// Dart also supports empty case clauses, with Fall-through
   switch (condition) {
     case "SUCCESS": // This is empty, just like continue
     case "HAVING_SUCCESS":
@@ -57,21 +57,13 @@ void main(List<String> args) {
     num++;
   }
 
-  var conditionTrue = true;
-
-  // If break is not given then a big problem
-  while (conditionTrue) {
-    print("Condition True");
-    break;
-  }
-
   // Do while loop
   do {
     print(num);
     num--;
   } while (num > 5);
 
-  print("************* 4. For Loop ***********");
+  print("************* 4. For , For - In, For each ***********");
 
   for (int i = 0; i < 5; i++) {
     if (i % 2 == 0)
