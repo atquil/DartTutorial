@@ -1,11 +1,14 @@
-# DartTutorial
-This will cover from basic to advance topics, which will help you in working with Flutter. 
-### **Prerequisite** : Basic understanding of any OOP Language. 
-
-
 ## What is Dart ? 
 
-Dart is a general-purpose, high-level modern programming language. It has two type of compilation technique 
+Dart is a general-purpose, high-level modern programming language developed by Google. It is used to build applications for the web, mobile, and desktop.
+Dart is an **object-oriented** language. 
+
+It has a C-style syntax, which means that it is similar to languages like Java, C#, and C++, moreover it can also be compiled to JavaScript, allowing Dart code to run on any modern web browser
+
+Some important features include, Null safety, async programming and automatic garbage collection. 
+
+
+It has two type of compilation technique 
 1. Just in Time Compilation (JOT) : 
    - What ? Convert the byte code in machine code (native code)
    - Help by compiling only those part which is being run by machine, thus providing feature of hot reload. 
@@ -14,22 +17,28 @@ Dart is a general-purpose, high-level modern programming language. It has two ty
    - Helps by compiling the code, to be deployed in prod environment or to app-store etc. 
 
 
-# Important Links
+## Why Dart ?
+
+Learning Dart can provide many benefits for a programmer like:
+1. Used to build applications for the web, mobile, and desktop using single codebase using flutter
+2. Dart has a **strong type system**, which can help to prevent common programming errors and make your code more reliable.
+
+## How to learn ?
+This **DartTutorial** will cover from basic to advance topics, which will help you in working with Flutter.
+
+
+### **Prerequisite** : Basic understanding of any OOP Language.
+
+
+## Where  to practice ?
 
 ### Online Dart Compiler : https://dart.dev/tools/dartpad 
 
 
-### Installation Steps 
-  1. Please install Xcode if you are using MAC before proceeding
-       - From Terminal run ``` xcode-select --install ``` and install and accept the agreement 
-  
-  2. Install Package Manager 
-      - Window : Chocolatey (https://chocolatey.org/install) 
-      - Mac : Homebrew (https://brew.sh/)
-  3. Install Dart on your system using package manager (https://dart.dev/get-dart)
-      - Check in terminal for Dart version : `dart --version`
+### Offline Installation Steps 
 
-   4. Install VS-Code (https://code.visualstudio.com/) 
+1. Depending on the OS please install the Dart SDK from the website (https://dart.dev/get-dart). 
+2. Install VS-Code (https://code.visualstudio.com/) 
       - Use Dart Extension (https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
 
 ### Some useful commands: 
