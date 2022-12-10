@@ -1,27 +1,28 @@
 /*
-  Programing language can be  - 
-        Statically Typed (C++, JAVA, SWIFT) where variable is known at compile time  e.g. string, int 
-        Dynamic Typed (Python, Ruby , JavaScript) That means variables can hold different kinds of data when you run the programe e.g. var 
-*/
-/// * Dart is statically typed, meaning that each variable in Dart has a type that must be known. For that purpose , Dart
-/// * uses Type inference.
-///
-/// Basic Dart Data Type : number (int, double) , String (UTF-16 code units) , Boolean , Lists , Sets
-///                       Maps , Runes(Unicode UTF-32 units)
 
-void main(List<String> args) {
-  print("************* 1. NUMBERS ***********");
+Why you need to learn data types ? 
+It's the way of classify and organize different type of data. 
 
-  /// Numbers : int, double and num
+Programing language can be  - 
+  1. Statically Typed (C++, JAVA, SWIFT) where variable is known at compile time  and it cannot change at runtime. 
+  2. Dynamic Typed (Python, Ruby , JavaScript) That means variables can hold different kinds of data when you run the programe e.g. var 
+
+As Dart is STATICALLY-TYPED-LANGUAGE, it helps to prevent common programming errors and make the code more reliable. 
+
+Basic Dart Data Type : number (int, double, num) , String (UTF-16 code units) , Boolean , Lists , Sets
+                       Maps , Runes(Unicode UTF-32 units), dynamic data type (var, dynamic)
+ */
+
+void main() {
+
+  print("************* 1. NUMBERS (int,double,num)***********");
 
   int age = 25; // declare - Whole numbers -2^63 to 2^63
-
   double salary = 2.01; // declare - Floating point numbers
 
   print(age);
   print(salary);
 
-  // num : to represent both int and double
   num doubleValue = 33.33;
   print(doubleValue);
 
@@ -76,15 +77,14 @@ void main(List<String> args) {
 
   print("************* 5. Sets ***********");
 
-  /// A set in Dart is an unordered collection of unique items
-  /// A set should contain similar type of items otherwise it will through error in runtime.
+  /// Unordered unique items - otherwise runtime exception
 
   Set<String> someSet = {"a", "b", 'c'};
   print("[Set]: $someSet");
 
   print("************* 6. Maps ***********");
 
-  /// Map<uniqueKey, Values>
+  /// Unordered collection of key and value pairs
   Map<int, String> names = {1: "Atul", 2: "Atul", 3: "Anand"};
   print("[Maps]: $names");
 
