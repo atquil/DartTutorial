@@ -1,65 +1,48 @@
-/// As Dart is an object- oriented programming language, it supports all the concepts of object-oriented programming.
-/// 1. Class : Blueprint of the object.
-///           <fields>
-///           <getters/setters>
-///           <constructor>
-///           <functions>
-/// 2. Object : We can access the class properties by creating object of class. The object has two
-///             characteristics i.e. state and behavior.
-/// 3. Inheritance: Mixin-based inheritance means that although every class (except for the top class, Object?)
-///                  has exactly one superclass, a class body can be reused in multiple class hierarchies.
+/*
+ As Dart is an object- oriented programming language, it supports all the concepts of object-oriented programming.
+ 1. Class: Blueprint of the object. :<fields>, <getters/setters>, <constructor><functions>
+ 2. Object: We can access the class properties by creating object of class. The object has two
+             characteristics i.e. state and behavior.
+ 3. Inheritance: Mixin-based inheritance means that although every class (except for the top class, Object?)
+                  has exactly one superclass, a class body can be reused in multiple class hierarchies.
+*/
 void main() {
   print("*************** 1. Constructors *****************");
 
-  /// There are three type of constructors in Dart
-  ///  a. Default Constructor or No Argument Constructor
-  ///  b. Parameter Constructor
-  ///  c. Named Constructor
-  ///  d. Constant constructor
-  ///  e. Super Constructor : After Inheritance.
+  /*
+   There are three type of constructors in Dart
+      a. Default Constructor or No Argument Constructor: 
+                - Automatically create if didn't declared.
+                - Dart compiler ignores the default constructor if we create a constructor with argument or no argument.
 
-  print("*************** a. Default Constructor *****************");
-  // Dart automatically creates default constructor , if we don't declare in the class.
+      b. Parameter Constructor: Pass parameter to constructor to initialize the instance variable
+      c. Named Constructor[NEW]: To declare the multiple constructors in single class
+      d. Constant constructor: Generate one instance of object (Cononical Instance) which can be used multiple times. 
+            - Object that are compile time constants (never change), must have final variables.
+            - Use: When we have multiple use of same value (e.g. padding)
+                  It helps by pre-instantiating object at compile time
+      e. Super Constructor :We can access both non-parameterized and parameterized constructor of superclass
+
+    Use of this keyword:It indicates the current instance of the class, methods, or constructor aka, Indicates present class variable.
+  */
+
+  //Default
   Student defaultConstructor = Student();
 
-  print("*************** b. Parameterized Constructor *****************");
-  // When we pass parameters to constructor, to initialize the instance variable.
+  //Parameterized 
   Teacher teacher = Teacher("SomeNameOfTeacher", 22);
+  TeacherWithThisKeyWord teacherWithThisKeyWord = TeacherWithThisKeyWord("SomeNameForThisKeyWord", 33);
 
-  /// * this Keyword : It indicates the current instance of the class, methods, or constructor.
-  /// *                Indicates present class variable.
-  TeacherWithThisKeyWord teacherWithThisKeyWord =
-      TeacherWithThisKeyWord("SomeNameForThisKeyWord", 33);
+  //[NEW] Named Constructor 
+  Principle principle = Principle();
+  Principle principleForNamedConstructor = Principle.isPresentInSchool(true); // Named Constructor isPresentInSchool to take one parameter
 
-  print("*************** c. Named Constructor *****************");
-  //The named constructors are used to declare the multiple constructors in single class
-  Principle principle = Principle(); // Object for default constructor
-  Principle principleForNamedConstructor =
-      Principle.isPresentInSchool(true); // Object for parameterized constructor
 
-  print("*************** d. Const Constructor *****************");
-
-  /// If the class produces objects that never change, you can make these objects compile-time constants.
-  /// To do this, define a const constructor and make sure that all instance variables are final.
-  /// Why to use ? When we have multiple use of same value. Like if we want to give same padding in most of the place.
-  ///           - It helps in not instantiating the same object over and over again, and moreover
-  ///             helps by pre-instantiating object at compile time
-  ///
-
-  // Now we can, declare a const variable
+  //[NEW]Const Constructor 
   const String whereToKeepLogo = "Keep In Center";
+  var whereToKeep = CreateMyConstClassToKeepLogoInCenter(whereToKeepLogo); 
 
-  var whereToKeep = CreateMyConstClassToKeepLogoInCenter(
-      whereToKeepLogo); // If we want this to be to done in everyPage then we will have to repeate it several times.
 
-  print(
-      "So as we have created a constant constructor, we can us it as many no of time as we want but it will have only one instance, i.e Cononical Instance. ");
-
-  // ! Note: There is also a way to store , a not a constant value in constant constructor .. but it's for later chapter.
-
-  print("*************** e. Super Constructor *****************");
-  //We can access both non-parameterized and parameterized constructor of superclass
-  // Explained in inheritance.
   print("*************** 2. Instance Variable *****************");
 
   Person person1 = Person("Atul", "Address", 22);
@@ -131,9 +114,10 @@ void main() {
 
   print(
       " **************** When to use Interface and when to use Abstract ***********");
-      /// source : https://dzone.com/articles/when-to-use-abstract-class-and-intreface 
-      /// Abstract: Closely related class
-      /// Interface : Unrelated class. 
+
+  /// source : https://dzone.com/articles/when-to-use-abstract-class-and-intreface
+  /// Abstract: Closely related class
+  /// Interface : Unrelated class.
 }
 
 class CreateMyConstClassToKeepLogoInCenter {
@@ -156,15 +140,13 @@ class Principle {
 }
 
 class Student {
-  // * Note that, Dart compiler ignores the default constructor if we create a constructor with argument or no argument.
   Student() {
     print("I am inside default Constructor/ no argument constructor");
   }
 }
 
 class Teacher {
-  String?
-      name; // making a nullable variable or if we don't want to we can do String name = 0
+  String? name; // making a nullable variable or if we don't want to we can do String name = 0
   int? age;
   Teacher(name, age) {
     ///n the constructor body, the class variables (attributes) on the left side are assigned by the constructor parameters with the same name. When we create the instance of a class, the constructor automatically called the constructor and printed the result.
@@ -192,7 +174,7 @@ class TeacherWithThisKeyWord {
   }
 }
 
-// Default Constructor Class.
+
 class Person {
   // * Object Property : Can be accessed by the object of the class.
 
